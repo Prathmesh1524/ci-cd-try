@@ -11,6 +11,9 @@ export async function p2pTransfer(to: string, amount: number) {
             message: "Error while sending"
         }
     }
+
+
+    
     const toUser = await prisma.user.findFirst({
         where: {
             number: to
